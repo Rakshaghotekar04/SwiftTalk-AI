@@ -109,8 +109,7 @@ class VoiceViewModel(application: Application) : AndroidViewModel(application) {
             .writeTimeout(20, java.util.concurrent.TimeUnit.SECONDS)
             .build()
 
-        val apiKey = "AIzaSyAWv-JwoJOwb3Ei3WWp-vQjWuLxOuvLv4A"
-
+    
 
         val requestBody =
             jsonObject.toString().toRequestBody("application/json".toMediaType())
